@@ -1,0 +1,55 @@
+<html>
+<script>
+    function calculateResults(){
+        let marks1 = parseInt(physics.value)
+        let marks2 = parseInt(chemistry.value)
+        let marks3 = parseInt(maths.value)
+        let total = marks1 + marks2 + marks3
+        let per = total*100/450
+
+        totalmarks.value=total
+        percentage.value=per
+
+        if(per>=60){
+            result.value="PASS"
+        }
+
+        if(per<60){
+            result.value="FAIL"
+        }
+
+
+    }
+    
+</script>
+<table bgcolor="green">
+    <tr>
+        <td> Physics: </td>
+        <td> <input type="text" id="physics"></td>
+    </tr>
+    
+    <tr>
+        <td> Chemistry: </td>
+        <td> <input type="text" id="chemistry"></td>
+    </tr>
+    <tr>
+        <td> Maths: </td>
+        <td> <input type="text" id="maths"></td>
+    </tr>
+    
+    <tr bgcolor="#F39C12">
+        <td> Toal Marks: </td>
+        <td> <input type="text" id="totalmarks"></td>
+    </tr>
+    <tr bgcolor="#F39C12">
+        <td> Percentage: </td>
+        <td> <input type="text" id="percentage"></td>
+    </tr>
+    <tr bgcolor="#F39C12">
+        <td> Result: </td>
+        <td> <input type="text" id="result"></td>
+    </tr>
+</table>
+<br>
+<input type="button" onclick="calculateResults()" value="Show Results">
+</html>
