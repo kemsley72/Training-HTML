@@ -1,0 +1,28 @@
+<html>
+    <style>
+        #s{
+            position:absolute;
+            top:200;
+            left:500
+        }
+    </style>
+    <script>
+    let fs=12
+    function doSomething(){
+        s.style.top= event.clientY
+        s.style.left= event.clientX
+        if (event.ctrlKey==true){
+            fs=fs+1
+        }
+        if (event.altKey==true){
+            fs=fs-1
+        }
+        
+        s.style.fontSize=fs
+        
+    }
+</script>
+<body onmousemove="doSomething()">
+    <span id="s"> Mark </span>
+</body>
+</html>

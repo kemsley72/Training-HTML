@@ -1,0 +1,36 @@
+<html>
+
+<script>
+function doCalculations(){
+    let A = num1.value
+    let B = num2.value
+    let C = parseInt(A) + parseInt(B)
+    num3.value=C
+}
+
+</script>
+<table bgcolor="aqua">
+    <tr>
+        <td>First Number:</td>
+        <td><input  id="num1"
+            type="text"></td>
+    </tr>
+     <tr>
+            <td>Second Number:</td>
+            <td><input  id="num2"
+                type="text"></td>
+        </tr>
+        <tr>
+            <td>Result:</td>
+            <td><input  id="num3"
+                type="text"></td>
+        </tr>
+</table>
+
+<br>
+
+<input  type="button" 
+        value="Addition" 
+        onclick="doCalculations()">
+
+</html>
